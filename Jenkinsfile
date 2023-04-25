@@ -7,12 +7,9 @@ pipeline {
       }
     }
 
-    stage('check DO setup health') {
+    stage('DO test') {
       steps {
-        waitUntil(initialRecurrencePeriod: 3, quiet: true) {
-          isUnix()
-        }
-
+        echo 'Do deployed'
       }
     }
 
