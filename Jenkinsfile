@@ -7,14 +7,5 @@ pipeline {
       }
     }
 
-    stage('check DO setup health') {
-      steps {
-        waitUntil(initialRecurrencePeriod: 3, quiet: true) {
-          isUnix()
-        }
-
-      }
-    }
-
   }
 }
